@@ -28,8 +28,17 @@
         border:1px solid blue;
     }
 </style>
-<script src="./js/jquery-1.8.3.min.js"></script>
+<script src="./jquery-1.8.3.min.js"></script>
+ <script src="./getUrl.js"></script>
 <script type="text/javascript">
+ 
+  var name = $.getUrlParam('name');
+		var id = $.getUrlParam('id');
+ 
+		window.onload = function(){
+			$("#addname").val(name);
+			$("#addid").val(id);
+		}
  
     $(document).ready(function(){
         $(".show-rough").mouseover(function(){
@@ -44,6 +53,8 @@
             $("#show-info").hide().html();
             $("#show-pre").html();
         })
+     
+     
     });
     //处理json数据，采用正则过滤出不同类型参数
     function syntaxHighlight(json) {
@@ -70,6 +81,14 @@
 </script>
 </head>
 <body>
+ 
+ <div>
+  <label>测试URL中的name是：</label>
+		<input type="text" id="addname" />
+		<label>测试URL中的id是：</label>
+		<input type="text" id="addid" />
+ </div>
+ 
 <table>
     <thead>
         <tr>
