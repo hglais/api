@@ -1,0 +1,13 @@
+<script type="application/javascript">
+  $(function (){
+      $.getJSON("db.json", function (data){
+        var strHtml = "123";
+        //清空内容
+        $.each(data, function (infoIndex, info){
+          strHtml += "姓名：" + info["name"] + "<br>";
+          strHtml += "<hr>"
+        })
+        console.log(strHtml);
+      })
+  })
+</script>
