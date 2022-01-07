@@ -32,8 +32,8 @@
  <script src="./getUrl.js"></script>
 <script type="text/javascript">
  
-  var name = $.GetUrlParam('name');
-		var id = $.GetUrlParam('id');
+  var name = $.GetQueryString('name');
+		var id = $.GetQueryString('id');
  
 		window.onload = function(){
 			$("#addname").val(name);
