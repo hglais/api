@@ -3,6 +3,9 @@
     "b":"1",
     "pasw":"qazqwe",
     "list":[
-        "EB4120AD-BFD3-4E7A-A7C1-4E3D0364B1C5"
+        {
+            "n":"m",
+            "d":"EB4120AD-BFD3-4E7A-A7C1-4E3D0364B1C5"
+        }
     ]
 }
